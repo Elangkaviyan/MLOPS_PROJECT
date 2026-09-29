@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #050505;
+    color: #e4e4e7;
+    font-family: 'Pixelify Sans', 'VT323', monospace;
+    letter-spacing: 0.03em;
+    image-rendering: pixelated;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Press Start 2P', 'Pixelify Sans', monospace;
+    letter-spacing: -0.02em;
+  }
+}
+
+.glass-card, .pixel-card {
+  background-color: #0f0f11;
+  border: 2px solid #3f3f46;
+  box-shadow: 4px 4px 0px #27272a, 8px 8px 0px #000000;
+  border-radius: 0px;
+}
+
+.pixel-card-header {
+  border-bottom: 2px solid #3f3f46;
+  background-color: #18181b;
+  padding: 12px 16px;
+}
+
+.pixel-btn {
+  background-color: #27272a;
+  color: #f4f4f5;
+  border: 2px solid #71717a;
+  box-shadow: 3px 3px 0px #000000;
+  font-family: 'Pixelify Sans', monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.1s ease;
+  border-radius: 0px;
+}
+
+.pixel-btn:hover {
+  background-color: #3f3f46;
+  border-color: #a1a1aa;
+}
+
+.pixel-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #000000;
+}
+
+.pixel-btn-accent {
+  background-color: #e4e4e7;
+  color: #09090b;
+  border: 2px solid #ffffff;
+  box-shadow: 3px 3px 0px #3f3f46;
+}
+
+.pixel-btn-accent:hover {
+  background-color: #ffffff;
+}
+
+.pixel-input {
+  background-color: #09090b;
+  border: 2px solid #3f3f46;
+  color: #f4f4f5;
+  font-family: 'Pixelify Sans', monospace;
+  border-radius: 0px;
+}
+
+.pixel-input:focus {
+  border-color: #a1a1aa;
+  outline: none;
+}
+
+/* Retro Scanline Overlay */
+.pixel-scanline {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+}
+
+/* Custom Pixel Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+  border: 1px solid #27272a;
+}
+::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border: 1px solid #71717a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #52525b;
+}
+
